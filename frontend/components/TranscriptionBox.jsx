@@ -16,12 +16,12 @@ export default function TranscriptionBox({ text }) {
 
       {/* Scrollable text content - padding-top avoids button overlap */}
       <ScrollView
-        className="flex-1 w-full justify-center items-center"
-        contentContainerClassName="p-6 pt-20"
+        className="flex-1 w-full "
+        contentContainerClassName="justify-center items-center p-6 pt-20"
         showsVerticalScrollIndicator={false}
       >
-        <View className="w-full border border-blue-500">
-          <Text className="text-lg pt-10">{text}</Text>
+        <View className="w-full border border-blue-500 items-center">
+          <Text className="text-lg pt-10 text-center">{text}</Text>
         </View>
       </ScrollView>
     </View>
