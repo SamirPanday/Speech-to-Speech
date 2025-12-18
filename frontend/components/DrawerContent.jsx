@@ -15,6 +15,7 @@ export default function DrawerContent(props) {
           className="rounded-lg"
         />
       </View>
+      <View className="h-px bg-gray-300 mx-4 my-2" />
       <DrawerItemList {...props} />
     </DrawerContentScrollView>
   );

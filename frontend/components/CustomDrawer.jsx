@@ -12,7 +12,6 @@ export default function CustomDrawer() {
         return <DrawerContent {...props} />;
       }}
     >
-      {/* <Image source={Logo} /> */}
       <Drawer.Screen
         name="index"
         component={Index}
