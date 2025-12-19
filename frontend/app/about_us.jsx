@@ -12,7 +12,7 @@ export default function AboutUs() {
         <View className="mb-6 bg-white rounded-2xl p-4 shadow-sm">
           <Text
             style={{ fontFamily: "Khula-Bold" }}
-            className="text-3xl font-bold text-[#001618] mb-3 text-center w-full"
+            className="text-3xl text-[#001618] my-3 pt-1 text-center"
           >
             About बोली
           </Text>
@@ -31,7 +31,7 @@ export default function AboutUs() {
         <View className="mb-6 bg-white rounded-2xl p-4 shadow-sm">
           <Text
             style={{ fontFamily: "Khula-Bold" }}
-            className="text-3xl font-bold text-[#001618] mb-2 text-center"
+            className="text-3xl text-[#001618] my-3 text-center"
           >
             Our Goal
           </Text>
@@ -50,7 +50,7 @@ export default function AboutUs() {
         <View className="mb-6 bg-white rounded-2xl p-4 shadow-sm">
           <Text
             style={{ fontFamily: "Khula-Bold" }}
-            className="text-3xl font-bold text-[#001618] mb-3 text-center"
+            className="text-3xl text-[#001618] my-3 text-center"
           >
             Key Features
           </Text>
@@ -86,12 +86,12 @@ export default function AboutUs() {
         {/* Footer Section */}
         <View className="mt-4 mb-2 bg-[#001618] rounded-3xl p-4">
           <View className="flex-row items-center justify-center mb-2">
-            <ShieldCheck size={18} color="#ffffff" className="mr-2" />
+            <ShieldCheck size={20} color="#ffffff" className="mr-2" />
             <Text
               style={{ fontFamily: "Khula-Bold" }}
-              className="text-white text-base font-semibold text-center"
+              className="text-white text-lg text-center"
             >
-              {" "}
+              {"  "}
               Privacy-First
             </Text>
           </View>
