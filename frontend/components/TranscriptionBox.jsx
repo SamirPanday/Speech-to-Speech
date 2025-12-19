@@ -2,7 +2,7 @@ import { View, Text, ScrollView, TouchableOpacity } from "react-native";
 import { Copy, Volume2 } from "lucide-react-native";
 import { useState } from "react";
 
-export default function TranscriptionBox({ text }) {
+export default function TranscriptionBox({ text, textSize }) {
   const [speaking, setSpeaking] = useState(false);
 
   const copyText = () => {
@@ -36,11 +36,16 @@ export default function TranscriptionBox({ text }) {
       {/* Scrollable text content - padding-top avoids button overlap */}
       <ScrollView
         className="flex-1 w-full "
-        contentContainerClassName="justify-center items-center p-5 pt-20"
+        contentContainerClassName="justify-center items-center p-5 pt-32"
         showsVerticalScrollIndicator={false}
       >
-        <View className="w-full items-center">
-          <Text className="text-lg pt-10 text-center">{text}</Text>
+        <View className="w-full items-center ">
+          <Text
+            className={`${textSize === "small" ? "text-xl" : textSize === "medium" ? "text-2xl" : "text-3xl"} pt-10 text-center`}
+            style={{ fontFamily: "Khula-Regular" }}
+          >
+            {text}
+          </Text>
         </View>
       </ScrollView>
     </View>

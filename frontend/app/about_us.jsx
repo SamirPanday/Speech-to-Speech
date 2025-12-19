@@ -1,5 +1,5 @@
 import { ScrollView, View, Text } from "react-native";
-import { ShieldCheck, CircleSmall } from "lucide-react-native";
+import { ShieldCheck } from "lucide-react-native";
 
 export default function AboutUs() {
   return (
@@ -9,11 +9,17 @@ export default function AboutUs() {
     >
       <View className="p-6">
         {/* Header Section */}
-        <View className="mb-6 bg-white rounded-lg p-5 shadow-sm">
-          <Text className="text-3xl font-bold text-[#001618] mb-3 text-center w-full">
+        <View className="mb-6 bg-white rounded-2xl p-4 shadow-sm">
+          <Text
+            style={{ fontFamily: "Khula-Bold" }}
+            className="text-3xl font-bold text-[#001618] mb-3 text-center w-full"
+          >
             About बोली
           </Text>
-          <Text className="text-base text-gray-700 leading-6 text-justify">
+          <Text
+            style={{ fontFamily: "Khula-Regular" }}
+            className="text-base text-gray-700 leading-6 text-center"
+          >
             बोली is a speech app built specifically for Nepali. A
             speech-to-text-to-speech tool focused on improving access to voice
             technology for low-resource languages. Speak, see the transcription,
@@ -22,11 +28,17 @@ export default function AboutUs() {
         </View>
 
         {/* Goal Section */}
-        <View className="mb-6 bg-white rounded-lg p-5 shadow-sm">
-          <Text className="text-3xl font-bold text-[#001618] mb-2 text-center">
+        <View className="mb-6 bg-white rounded-2xl p-4 shadow-sm">
+          <Text
+            style={{ fontFamily: "Khula-Bold" }}
+            className="text-3xl font-bold text-[#001618] mb-2 text-center"
+          >
             Our Goal
           </Text>
-          <Text className="text-base text-gray-700 leading-6 text-justify">
+          <Text
+            style={{ fontFamily: "Khula-Regular" }}
+            className="text-base text-gray-700 leading-6 text-center"
+          >
             We aim to make robust Nepali ASR (automatic speech recognition) and
             TTS (text-to-speech) experiences available to everyday users. The
             app focuses on accuracy, responsiveness, and respectful handling of
@@ -35,34 +47,36 @@ export default function AboutUs() {
         </View>
 
         {/* Features Section */}
-        <View className="mb-6 bg-white rounded-lg p-4 shadow-sm">
-          <Text className="text-3xl font-bold text-[#001618] mb-3 text-center">
+        <View className="mb-6 bg-white rounded-2xl p-4 shadow-sm">
+          <Text
+            style={{ fontFamily: "Khula-Bold" }}
+            className="text-3xl font-bold text-[#001618] mb-3 text-center"
+          >
             Key Features
           </Text>
           <View className="space-y-3">
             <View className="flex-row items-start">
-              <CircleSmall size={12} color="#374151" className="mt-1 mr-3" />
-              <Text className="text-base text-gray-700 leading-6 flex-1">
-                Speech-to-text in Nepali with clear, readable transcription
+              <Text
+                style={{ fontFamily: "Khula-Regular" }}
+                className="text-base text-gray-700 leading-6 flex-1"
+              >
+                • Speech-to-text in Nepali with clear, readable transcription
               </Text>
             </View>
             <View className="flex-row items-start">
-              <CircleSmall size={12} color="#374151" className="mt-1 mr-3" />
-              <Text className="text-base text-gray-700 leading-6 flex-1">
-                Natural Nepali text-to-speech playback
+              <Text
+                style={{ fontFamily: "Khula-Regular" }}
+                className="text-base text-gray-700 leading-6 flex-1"
+              >
+                • Natural Nepali text-to-speech playback
               </Text>
             </View>
             <View className="flex-row items-start">
-              <CircleSmall size={12} color="#374151" className="mt-1 mr-3" />
-              <Text className="text-base text-gray-700 leading-6 flex-1">
-                Lightweight, low-latency behavior for offline or constrained
-                devices
-              </Text>
-            </View>
-            <View className="flex-row items-start">
-              <CircleSmall size={12} color="#374151" className="mt-1 mr-3" />
-              <Text className="text-base text-gray-700 leading-6 flex-1">
-                Easy export/share of text and audio for learning and
+              <Text
+                style={{ fontFamily: "Khula-Regular" }}
+                className="text-base text-gray-700 leading-6 flex-1"
+              >
+                • Easy export/share of text and audio for learning and
                 accessibility
               </Text>
             </View>
@@ -70,19 +84,29 @@ export default function AboutUs() {
         </View>
 
         {/* Footer Section */}
-        <View className="mt-6 bg-[#001618] rounded-lg p-4">
+        <View className="mt-4 mb-2 bg-[#001618] rounded-3xl p-4">
           <View className="flex-row items-center justify-center mb-2">
             <ShieldCheck size={18} color="#ffffff" className="mr-2" />
-            <Text className="text-white text-base font-semibold text-center">
+            <Text
+              style={{ fontFamily: "Khula-Bold" }}
+              className="text-white text-base font-semibold text-center"
+            >
+              {" "}
               Privacy-First
             </Text>
           </View>
 
-          <Text className="text-gray-300 text-xs leading-4 mb-3 text-center">
+          <Text
+            style={{ fontFamily: "Khula-Regular" }}
+            className="text-gray-300 text-xs leading-4 mb-3 text-center"
+          >
             Audio stays on your device unless you choose to share it.
           </Text>
           <View className="border-t border-gray-600 pt-3">
-            <Text className="text-gray-400 text-xs leading-4 text-center">
+            <Text
+              style={{ fontFamily: "Khula-Regular" }}
+              className="text-gray-400 text-xs leading-4 text-center"
+            >
               Want to help improve Nepali speech tech? Contribute data,
               feedback, or ideas - contact us at support.boli@email.com
             </Text>
